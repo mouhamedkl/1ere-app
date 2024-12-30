@@ -10,7 +10,7 @@ import { ConfigModule } from '@nestjs/config';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: '.env.test', // Charge les variables d'environnement pour les tests
+      //envFilePath: '.env.test', // Charge les variables d'environnement pour les tests
       isGlobal: true, // Rendre les variables accessibles globalement dans toute l'application
     }),
     TypeOrmModule.forRoot({
